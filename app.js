@@ -1,8 +1,17 @@
-const arr1 = [1, 2, 3, 4, 5, 6, 7]
-const arr2 = [8, 9, 10]
+// Array of objects
+const students = [
+    { id: 1, name: 'Iqbal', age: 20 },
+    { id: 2, name: 'Mahfuz', age: 21 },
+    { id: 3, name: 'Tusar', age: 22 },
+]
 
-// arr1.push(arr2)
-// arr1.push(...arr2)
-Array.prototype.push.apply(arr1, arr2)
+const givenId = 2;
+const updatedName = 'Mahfuz Swaron';
 
-console.log(arr1);
+for (let i = 0; i < students.length; i++) {
+    if (students[i].id === givenId) {
+        students[i].name = updatedName;
+        break;
+    }
+}
+console.log(students);
