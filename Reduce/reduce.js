@@ -18,13 +18,13 @@ for (let i = 1; i < 5000000; i++) {
     arr.push(i)
 }
 
-console.time('not-op')
+// console.time('not-op')
 const r1 = arr.filter((item) => item % 2 === 0).map((item) => item * 2)
 console.log(r1);
 // console.timeEnd('not-op')
 
 
-console.time('op')
+// console.time('op')
 const r2 = arr.reduce((acc, cur) => {
     if (cur % 2 === 0) {
         acc.push(cur * 2)
@@ -60,8 +60,20 @@ console.log(result)
 
 
 // console.time('built-in reduce')
-const result = [1, 2, 3, 4, 5].reduce((acc, cur) => {
+const sum = [1, 2, 3, 4, 5].reduce((acc, cur) => {
     return acc += cur;
 }, 0)
-console.log(result);
+console.log(sum);
 // console.timeEnd('built-in reduce')
+
+
+// avg
+const avg = [1, 2, 3, 4, 5].reduce((acc, cur, index, arr) => {
+    acc += cur;
+    if (index === arr.length - 1) {
+        return acc / arr.length;
+    }
+    return acc;
+})
+
+console.log(avg);
