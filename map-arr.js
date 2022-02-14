@@ -47,9 +47,9 @@ const lengths = reuseAndMap(names, (value) => value.length)
 const upperCase = reuseAndMap(names, (value) => value.toUpperCase())
 const sliced = reuseAndMap(names, (value) => value.substr(6))
 
-console.log(lengths);
-console.log(upperCase);
-console.log(sliced);
+// console.log(lengths);
+// console.log(upperCase);
+// console.log(sliced);
 
 
 
@@ -58,6 +58,23 @@ const lengths2 = names.map((value) => value.length)
 const upperCase2 = names.map((value) => value.toUpperCase())
 const sliced2 = names.map((value) => value.substr(6))
 
-console.log(lengths2);
+/* console.log(lengths2);
 console.log(upperCase2);
 console.log(sliced2);
+ */
+
+const studentsArr = [
+    { id: 1, name: 'Ayyub Iqbal', gpa: 4.5, email: 'iqbal@gmail.com' },
+    { id: 2, name: 'Mahfuz Swaron', gpa: 3.5, email: 'mahfuz@gmail.com' },
+    { id: 3, name: 'tusar Ahmed', gpa: 2.5, email: 'tusar@gmail.com' },
+]
+
+const mappedStudents = studentsArr.map((value) => {
+    return {
+        ...value,
+        title: `Hello ${value.name}`,
+        mgs: `Your GPA is ${value.gpa},  you have been ${value.gpa >= 3 ? 'passed' : 'failed, sorry!'}`
+    }
+})
+
+console.log(mappedStudents);
