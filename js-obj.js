@@ -87,3 +87,20 @@ const random = Math.random();
 console.log(random);
 console.log(Math.round(random));
 console.log(Math.round(random * 100));
+
+console.log('------------------------');
+
+
+// Primitive value
+let scoreOne = 100;
+let scoreTwo = scoreOne;
+console.log(`scoreOne ${scoreOne}, scoreTwo ${scoreTwo}`);
+scoreOne = 200;
+console.log(`scoreOne ${scoreOne}, scoreTwo ${scoreTwo}`);
+
+// reference value
+const userOne = { name: 'Ayyub Iqbal', age: 23 };
+const userTwo = userOne;
+console.log(`UserOne name ${userOne.name}, userTwo name ${userTwo.name}`);
+userOne.name = 'Mahfuz';
+console.log(`UserOne name ${userOne.name}, userTwo name ${userTwo.name}`);
