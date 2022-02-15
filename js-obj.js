@@ -66,3 +66,24 @@ numbers['x'] = x;
 numbers['y'] = y;
 console.log(numbers);
 
+console.log('------------------------');
+
+// Math Objects
+
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
+console.log('------------------------');
+
+const area = 7.5;
+// Math object method
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
+console.log('------------------------');
+
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random));
+console.log(Math.round(random * 100));
