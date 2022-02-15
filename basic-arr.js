@@ -3,13 +3,13 @@ arr[0] = 1;
 arr[1] = 2;
 arr.push(3)
 arr.push(4)
-arr[100] = 100;
+// arr[100] = 100;
 arr.unshift(0)
 arr[arr.length] = 101;
 arr[arr.length] = 102;
 arr[arr.length] = 103;
 arr[arr.length] = 104;
-// console.log(arr, arr.length);
+console.log(arr, arr.length);
 
 
 // constructor pattern
@@ -39,10 +39,14 @@ const b2 = Array(5)
 
 const b3 = Array(1, 2, 3, 4, 5, 6)
 b3[b3.length] = 7
-// console.log(b3, b3.length);
+b3[b3.length] = 9
+console.log(b3, b3.length);
 
 
 // console.log(a1.__proto__.constructor);
 // console.log(b1.__proto__.constructor);
 
 
+// firstIndex = 0
+// lastIndex = arr.length - 1;
+// arr[arr.length] =element will be added after lastIndex 
