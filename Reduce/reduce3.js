@@ -28,11 +28,27 @@ console.log(invoice);
 /*
 // result
 {
-  iphone: { price: 3000, quantity: 3 },
-  samsung: { price: 4000, quantity: 2 },
-  nokia: { price: 6000, quantity: 2 },
-  huawei: { price: 4000, quantity: 1 }
+    iphone: { price: 3000, quantity: 3 },
+    samsung: { price: 4000, quantity: 2 },
+    nokia: { price: 6000, quantity: 2 },
+    huawei: { price: 4000, quantity: 1 }
 }
 */
 
 // task - total price
+
+// basic object operation to understand array reducing from array to objects
+var obj6 = {
+    x: 10
+}
+obj6.x = 45;
+obj6.a = 15;
+
+console.log(obj6);
+console.log(obj6.c);
+
+obj6['y'] = 100;
+
+var prop = 'z'; //cur.name = 'z'
+obj6[prop] = 55; //obj6[cur.name] = 55;
+console.log(obj6);
